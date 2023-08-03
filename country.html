@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Country Capitals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #1a4c8a;
+            margin: 30px 0;
+        }
+
+        .selection-container {
+            display: inline-block;
+            background-color: #d0d397;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            color: #1a4c8a;
+        }
+
+        select {
+            margin-left: 10px;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        #capital-display {
+            font-size: 24px;
+            color: #1a4c8a;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .country-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .country-card {
+            background-color: #d17979;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            max-width: 250px;
+        }
+
+        .country-card h3 {
+            color: #1a4c8a;
+            margin-top: 0;
+        }
+
+        .country-card p {
+            color: #444;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Country Capitals</h1>
+    <div class="selection-container">
+        <label for="country-list">Select a Country:</label>
+        <select id="country-list" onchange="showCapital()">
+            <option value="none">-- Select a Country --</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Australia">Australia</option>
+            <option value="USA">USA</option>
+            <option value="France">France</option>
+            <option value="Bangladesh">Bangladesh</option>
+        </select>
+    </div>
+    <div id="capital-display"></div>
+
+    <p>
+        Learn about the capitals of different countries by selecting them from the list above. Discover interesting
+        facts and trivia about New Zealand, Australia, USA, France, Bangladesh, and more. Educate yourself while
+        having fun!
+    </p>
+
+    <div class="country-info">
+        <div class="country-card">
+            <h3>New Zealand</h3>
+            <p>Population: 5 million</p>
+            <p>Official Language: English, Māori</p>
+            <p>Fun Fact: New Zealand is known for its stunning landscapes, including mountains, lakes, and fjords.</p>
+        </div>
+
+        <div class="country-card">
+            <h3>Australia</h3>
+            <p>Population: 25 million</p>
+            <p>Official Language: English</p>
+            <p>Fun Fact: Australia is home to the Great Barrier Reef, the world's largest coral reef system.</p>
+        </div>
+
+        <div class="country-card">
+            <h3>USA</h3>
+            <p>Population: 330 million</p>
+            <p>Official Language: English</p>
+            <p>Fun Fact: The USA has 50 states and is known for its cultural diversity.</p>
+        </div>
+
+        <div class="country-card">
+            <h3>France</h3>
+            <p>Population: 67 million</p>
+            <p>Official Language: French</p>
+            <p>Fun Fact: France is famous for its cuisine, art, and iconic landmarks like the Eiffel Tower.</p>
+        </div>
+
+        <div class="country-card">
+            <h3>Bangladesh</h3>
+            <p>Population: 168 million</p>
+            <p>Official Language: Bengali</p>
+            <p>Fun Fact: The Sundarbans mangrove forest in Bangladesh is home to the Royal Bengal Tiger.</p>
+        </div>
+    </div>
+
+    <script>
+        function showCapital() {
+            var countryList = document.getElementById("country-list");
+            var selectedCountry = countryList.value;
+            var capitalDisplay = document.getElementById("capital-display");
+
+            switch (selectedCountry) {
+                case "New Zealand":
+                    capitalDisplay.textContent = "Capital: Wellington";
+                    break;
+                case "Australia":
+                    capitalDisplay.textContent = "Capital: Canberra";
+                    break;
+                case "USA":
+                    capitalDisplay.textContent = "Capital: Washington, D.C.";
+                    break;
+                case "France":
+                    capitalDisplay.textContent = "Capital: Paris";
+                    break;
+                case "Bangladesh":
+                    capitalDisplay.textContent = "Capital: Dhaka";
+                    break;
+                default:
+                    capitalDisplay.textContent = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Html</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        table {
+
+            border-collapse: collapse;
+            width: 1300px;
+            height: 600px;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 2px solid black;
+            padding: 5px 10px;
+
+        }
+
+        .head {
+            background-color: rgb(205, 172, 237);
+        }
+
+        .total {
+            text-align: end;
+        }
+
+        h1 {
+            caption-side: bottom;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        caption {
+            caption-side: top;
+            margin-bottom: 10px;
+            text-align: center;
+            color: rgb(76, 86, 86);
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .Sunday-color {
+            background-color: rgb(234, 62, 62);
+            color: white;
+        }
+
+        .monday-color {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <caption>Class Routine of EdTech 19-20</h6> </caption>
+            <tr class="head">
+                <th>Day</th>
+                <th>8.00-9.00</th>
+                <th>9.00-10.00</th>
+                <th>10.00-11.00</th>
+                <th>11.00-12.00</th>
+                <th>12.00-1.00</th>
+                <th>1.00-2.00</th>
+                <th>2.00-3.00</th>
+                <th>3.00-4.00</th>
+                <th>4.00-5.00</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr class="Sunday-color">
+                <td rowspan="2">Sunday</td>
+                <td rowspan="2" colspan="2">
+                    ICTE 4339 (AR) <br>
+                    <b> Tutorial </b> <br>
+                    <i> Room 4001</i>
+                </td>
+                <td rowspan="2" colspan="2">
+                    ICTE 4337 (FI) <br>
+                    <b> Tutorial </b> <br>
+                    <i>Room 4001 </i>
+                </td>
+
+                <td rowspan="2">
+                </td>
+                <td rowspan="2">
+                </td>
+
+                <td colspan="3">
+                  EDU 4312 (AZ) <br>
+                  <b>Lab(G-1) </b> <br> 
+                  <i>Room 2701 </i>
+
+                </td>
+            <tr class="Sunday-color">
+                <td colspan="3">
+                  ICTE 4340 (MA) <br>
+                  <b>Lab(G-2) </b> <br> 
+                  <i>Room 4701 </i>
+            </tr>
+
+            </tr>
+
+            <tr class="monday-color">
+                <td>Monday</td>
+                <td></td>
+                <td></td>
+                <td colspan="2">
+                  EDU 4311 (SSA) <br>
+                  <b> Lecture </b> <br>
+                  <i>(Online-Zoom) </i>
+
+                </td>
+                <td colspan="2"> 
+                  ICTE 4341(RH) <br>
+                  <b> Tutorial </b> <br>
+                  <i>Room 4001 </i>
+                </td>
+                <td>
+
+                </td>
+                <td colspan="2">
+                    ICTE 4337 (SMH) <br>
+                    <b> Lecture </b> <br>
+                    <i>(Online-Zoom) </i>
+                </td>
+            </tr>
+
+            <tr class="Sunday-color">
+                <td rowspan="2">Tuesday</td>
+                <td rowspan="2">
+                </td>
+                <td rowspan="2">
+                </td>
+                <td rowspan="2">
+                </td>
+                <td colspan="3">
+                    ICTE 4340 (MA) <br>
+                    <b>Lab(G-1) </b> <br> 
+                    <i>Room 2701 </i>
+                </td>
+                <td rowspan="2"></td>
+                <td rowspan="2" colspan="2">
+                   EDU 4313(KIS) <br>
+                   <b> Lecture</b> <br>
+                   <i> (Online-Zoom) </i> 
+                </td>
+
+            </tr>
+            <tr class="Sunday-color">
+                <td colspan="3">
+                  ICTE 4342 (RH) <br>
+                  <b>Lab(G-2) </b> <br>
+                  <i> Room 4701</i>
+                </td>
+            </tr>
+
+            <tr class="monday-color">
+                <td rowspan="2">Wednesday</td>
+                <td colspan="3"> 
+                  ICTE 4342 (RH) <br>
+                  <b>Lab(G-1) </b> <br>
+                  <i> Room 2701</i>
+                </td>
+                <td rowspan="2">
+                </td>
+                <td rowspan="2">
+                </td>
+                <td rowspan="2" colspan="2">
+                    EDU 4311 (NS) <br>
+                    <b> Tutorial </b> <br>
+                    <i> Room 4001 </i>
+                </td>
+                <td rowspan="2" colspan="2">
+                    EDU 4313 (AZ) <br>
+                    <b> Lecture </b> <br>
+                    <i> Online-(Zoom) </i>
+                </td>
+
+            </tr>
+            <tr class="monday-color">
+                <td colspan="3">
+                    EDU 4312 (AZ) <br>
+                    <b>Lab(G-2)</b> <br>
+                    <i>Room 4701</i>
+                </td>
+            </tr>
+
+            <tr class="Sunday-color">
+                <td>Thursday</td>
+                <td colspan="2">
+                    ICTE 4341 (MMR) <br>
+                    <b> Lecture</b> <br>
+                    <i> Online-(Zoom) </i>
+
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2">
+                    ICTE 4339 (MSA) <br>
+                    <b> Lecture</b> <br>
+                    <i> Online-(Zoom) </i>
+                </td>
+            </tr>
+
+
+    </table>
+
+
+
+    </div>
+
+</body>
+
+</html>
